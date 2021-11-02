@@ -13,6 +13,14 @@
 		042F8A4C272DFE46002B6632 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042F8A4A272DFE46002B6632 /* Main.storyboard */; };
 		042F8A4E272DFE48002B6632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042F8A4D272DFE48002B6632 /* Assets.xcassets */; };
 		042F8A51272DFE48002B6632 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042F8A4F272DFE48002B6632 /* LaunchScreen.storyboard */; };
+		0439851B272F755A008F72C7 /* QRScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 0439851A272F755A008F72C7 /* QRScanner */; };
+		04398521272F9A6A008F72C7 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04398520272F9A6A008F72C7 /* Scanner.swift */; };
+		04398523272FABFE008F72C7 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04398522272FABFE008F72C7 /* Registration.swift */; };
+		04398525272FB2C3008F72C7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04398524272FB2C3008F72C7 /* ImagePicker.swift */; };
+		04398527272FB56A008F72C7 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04398526272FB56A008F72C7 /* Dashboard.swift */; };
+		0439852A272FB750008F72C7 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 04398529272FB750008F72C7 /* Toast */; };
+		043E72152730622D00D8649D /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E72142730622D00D8649D /* Configuration.swift */; };
+		043E72172730787D00D8649D /* UserCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E72162730787D00D8649D /* UserCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,12 @@
 		042F8A4D272DFE48002B6632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		042F8A50272DFE48002B6632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		042F8A52272DFE48002B6632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04398520272F9A6A008F72C7 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		04398522272FABFE008F72C7 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		04398524272FB2C3008F72C7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		04398526272FB56A008F72C7 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		043E72142730622D00D8649D /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		043E72162730787D00D8649D /* UserCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0439852A272FB750008F72C7 /* Toast in Frameworks */,
+				0439851B272F755A008F72C7 /* QRScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +79,12 @@
 				042F8A4D272DFE48002B6632 /* Assets.xcassets */,
 				042F8A4F272DFE48002B6632 /* LaunchScreen.storyboard */,
 				042F8A52272DFE48002B6632 /* Info.plist */,
+				04398520272F9A6A008F72C7 /* Scanner.swift */,
+				04398522272FABFE008F72C7 /* Registration.swift */,
+				04398524272FB2C3008F72C7 /* ImagePicker.swift */,
+				04398526272FB56A008F72C7 /* Dashboard.swift */,
+				043E72142730622D00D8649D /* Configuration.swift */,
+				043E72162730787D00D8649D /* UserCard.swift */,
 			);
 			path = EncyPET;
 			sourceTree = "<group>";
@@ -83,6 +105,10 @@
 			dependencies = (
 			);
 			name = EncyPET;
+			packageProductDependencies = (
+				0439851A272F755A008F72C7 /* QRScanner */,
+				04398529272FB750008F72C7 /* Toast */,
+			);
 			productName = EncyPET;
 			productReference = 042F8A41272DFE46002B6632 /* EncyPET.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +137,10 @@
 				Base,
 			);
 			mainGroup = 042F8A38272DFE46002B6632;
+			packageReferences = (
+				04398519272F755A008F72C7 /* XCRemoteSwiftPackageReference "QRScanner" */,
+				04398528272FB750008F72C7 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = 042F8A42272DFE46002B6632 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +170,12 @@
 			files = (
 				042F8A49272DFE46002B6632 /* ViewController.swift in Sources */,
 				042F8A45272DFE46002B6632 /* AppDelegate.swift in Sources */,
+				04398521272F9A6A008F72C7 /* Scanner.swift in Sources */,
+				04398525272FB2C3008F72C7 /* ImagePicker.swift in Sources */,
+				043E72172730787D00D8649D /* UserCard.swift in Sources */,
+				04398523272FABFE008F72C7 /* Registration.swift in Sources */,
+				04398527272FB56A008F72C7 /* Dashboard.swift in Sources */,
+				043E72152730622D00D8649D /* Configuration.swift in Sources */,
 				042F8A47272DFE46002B6632 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +333,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +343,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,6 +362,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +372,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -360,6 +398,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04398519272F755A008F72C7 /* XCRemoteSwiftPackageReference "QRScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mercari/QRScanner.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		04398528272FB750008F72C7 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0439851A272F755A008F72C7 /* QRScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04398519272F755A008F72C7 /* XCRemoteSwiftPackageReference "QRScanner" */;
+			productName = QRScanner;
+		};
+		04398529272FB750008F72C7 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04398528272FB750008F72C7 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 042F8A39272DFE46002B6632 /* Project object */;
 }
